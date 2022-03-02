@@ -24,11 +24,57 @@ body {
   margin: 0;
 }
 
+button {
+  font-size: 15px;
+  font-family: 'League Spartan', sans-serif;
+  width: 140px;
+  height: 50px;
+  border-width: 0px;
+  color: #777777;
+  border-color: #dcdcdc;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background: linear-gradient(#ededed, #dfdfdf);
+}
+
+button:hover {
+  background: linear-gradient(#dfdfdf, #ededed);
+}
+
+h1 {
+  font-size: 1.875em;
+  /* 30px/16=1.875em */
+}
+
 header {
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: #F5F2E7;
+  gap: 16em;
+}
+
+.intropic {
+  height: auto;
+  width: 500px;
+  border-radius: .5em;
+}
+
+.intro-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4em;
+  padding-bottom: 4em;
+  gap: 2em;
+}
+
+.left-container {
+  width: 500px;
+  padding-right: 1em;
 }
 
 .links {
@@ -41,16 +87,20 @@ header {
   color: #444444;
 }
 
+.p1 {
+  margin-bottom: 2em;
+}
+
 /* Tentative Responsive Media Query for Smartphone/Ipad:
 May need fixing */
 @media only screen and (max-width: 960px) {
-
   header {
     justify-content: center;
     align-items: center;
     background-color: #F5F2E7;
     flex-direction: column;
     padding-bottom: 1em;
+    gap: 0em;
   }
 
   .links {
