@@ -40,3 +40,20 @@ header {
 .logo {
   color: #444444;
 }
+
+/* Tentative Responsive Media Query for Smartphone/Ipad:
+May need fixing */
+@media only screen and (max-width: 960px) {
+
+  header {
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F2E7;
+    flex-direction: column;
+    padding-bottom: 1em;
+  }
+
+  .links {
+    gap: 2em;
+  }
+}
