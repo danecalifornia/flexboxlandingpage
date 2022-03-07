@@ -87,6 +87,7 @@ span {
 .class-name {
   padding-top: 1.5em;
 }
+
 .class-one {
   width: 300px;
   display: flex;
@@ -110,7 +111,6 @@ span {
   display: flex;
   gap: 1em;
   flex-wrap: wrap;
-
 }
 
 .intropic {
@@ -179,8 +179,8 @@ span {
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-
 }
+
 .section-title {
   font-size: 2em;
   font-weight: 500;
@@ -194,8 +194,8 @@ span {
   max-width: 200px;
   height: auto;
   border-radius: 10%;
-
 }
+
 /* Tentative Responsive Media Query for Smartphone/Ipad:
 May need fixing */
 @media only screen and (max-width: 960px) {
