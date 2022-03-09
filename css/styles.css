@@ -60,6 +60,14 @@ button:hover, button:focus, button:active {
   transform: scale(1.1);
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  color: grey;
+  background-color: white;
+}
+
 h1 {
   font-size: 1.875em;
   /* 30px/16=1.875em */
@@ -91,7 +99,7 @@ span {
 }
 
 .calltoaction-section {
-  background-color: #F5F2E7;
+  background-color: rgba(255, 231, 173, 0.75);
   display: flex;
   justify-content: center;
   padding-top: 4em;
