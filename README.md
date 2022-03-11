@@ -1,6 +1,6 @@
 # flexboxlandingpage
 
-This project is a landing page for a yoga company, Warm Energy Yoga. The project showcases my use of various elements of web development including but not limited to: HTML5, CSS3, Flexbox Layout, and Web Design Principles.
+This project is a landing page for a yoga company, Warm Energy Yoga. The project showcases my use of various elements of web development including but not limited to: HTML5, CSS3, Javascript, Flexbox Layout, and Web Design Principles.
 Photo Credits:
 
 Photo by cottonbro from Pexels

@@ -65,7 +65,7 @@ footer {
   justify-content: center;
   padding: 1em;
   color: grey;
-  background-color: white;
+  background-color: #F5F2E7;
 }
 
 h1 {
@@ -78,8 +78,11 @@ header {
   justify-content: space-around;
   align-items: center;
   background-color: #F5F2E7;
-  gap: 16em;
-  box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25);
+  gap: 18rem;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
+  position: sticky;
+  width: 100%;
+  z-index: 9999;
 }
 
 span {
@@ -158,6 +161,7 @@ span {
   padding-bottom: 4em;
   gap: 2em;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .left-container {
@@ -227,19 +231,56 @@ span {
   border-radius: 10%;
 }
 
+.toggle-button {
+  position: absolute;
+  top: 1.3rem;
+  right: 2rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  padding-right: 2em;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #F0A500;
+  border-radius: 10px;
+}
+
 /* Tentative Responsive Media Query for Smartphone/Ipad:
 May need fixing */
 @media only screen and (max-width: 960px) {
-  header {
-    justify-content: center;
-    align-items: center;
-    background-color: #F5F2E7;
-    flex-direction: column;
-    padding-bottom: 1em;
-    gap: 0em;
+  .toggle-button {
+    display: flex;
   }
 
   .links {
-    gap: 2em;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 1em;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 2rem;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  /* Hover CSS Grow */
+  a:hover, a:focus, a:active {
+    -webkit-transform: none;
+    transform: none;
+    color: black;
+  }
+
+  .links.active {
+    display: flex;
   }
 }
