@@ -65,7 +65,6 @@ footer {
   justify-content: center;
   padding: 1em;
   color: grey;
-  background-color: #F5F2E7;
 }
 
 h1 {
@@ -102,7 +101,7 @@ span {
 }
 
 .calltoaction-section {
-  background-color: rgba(255, 231, 173, 0.75);
+  background-color: rgba(255, 231, 173, 0.45);
   display: flex;
   justify-content: center;
   padding-top: 4em;
@@ -116,6 +115,7 @@ span {
   display: flex;
   justify-content: space-around;
   padding: 2em;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 }
 
 .class-name {
@@ -130,6 +130,11 @@ span {
   text-align: center;
   align-items: center;
   align-content: center;
+  background-color: rgba(244, 241, 230, 0.51);
+  padding-top: 1.8em;
+  padding-bottom: .5em;
+  border-radius: .5em;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 }
 
 .class-section {
@@ -151,6 +156,7 @@ span {
   height: auto;
   width: 500px;
   border-radius: .5em;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 }
 
 .intro-section {
@@ -164,9 +170,14 @@ span {
   flex-wrap: wrap;
 }
 
+.last-call {
+  line-height: 1.2em;
+}
+
 .left-container {
   width: 500px;
-  padding-right: 1em;
+  padding-right: 1.95em;
+  padding-bottom: 1.5em;
 }
 
 .links {
@@ -177,6 +188,7 @@ span {
 
 .logo {
   color: black;
+  display: flex;
 }
 
 .p1 {
@@ -188,6 +200,7 @@ span {
   margin-bottom: 2em;
   font-size: 1.15em;
   line-height: 1.2em;
+  font-style: italic;
 }
 
 .quote {
@@ -223,12 +236,13 @@ span {
 
 .sidenote {
   color: #F0A500;
+  line-height: 1.2em;
 }
 
 .thumbnails {
   max-width: 200px;
   height: auto;
-  border-radius: 10%;
+  border-radius: 5%;
 }
 
 .toggle-button {
@@ -252,7 +266,79 @@ span {
 
 /* Tentative Responsive Media Query for Smartphone/Ipad:
 May need fixing */
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 950px) {
+  .centered-box {
+    display: block;
+  }
+
+  .button-2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
+
+  .last-call {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1285px) {
+  .class-thumbnails {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .class-one {
+    margin-bottom: 1.3em;
+  }
+}
+
+@media only screen and (max-width: 1085px) {
+  .class-thumbnails {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .section-header {
+    max-width: 90%;
+    display: flex;
+    text-align: center;
+  }
+
+  .left-container {
+    padding-left: 1.95em;
+    min-width: 345px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .intropic {
+    max-width: 90%;
+  }
+
+  .right-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .intro-section {
+    max-width: 100%;
+    padding-top: 2em;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  h1 {
+    line-height: 1.2em;
+  }
+
   .toggle-button {
     display: flex;
   }
