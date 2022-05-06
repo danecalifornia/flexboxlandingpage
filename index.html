@@ -28,7 +28,6 @@
       <span class="bar"></span>
       <span class="bar"></span>
     </a>
-
     <div class="links">
       <a href="#class-offerings">classes</a>
       <a href="#quotesec">about</a>
@@ -43,7 +42,7 @@
         dynamic, and inclusive yoga classes where everyone can
         thrive. </p>
       <p class="p2">Settle in, you belong here.</p>
-      <button type="button" name="button" onclick="window.dialog.show();" >sign up</button>
+      <button type="button" name="button" onclick="window.dialog.show();">sign up</button>
     </div>
     <div class="right-container">
       <img class="intropic" src="images/IMG_5058.jpeg" alt="">
@@ -123,32 +122,42 @@
   </section>
   <!-- NOTE: Copyright/Socials Section -->
   <footer id="contact-me">
+    <div class="socials">
+      <div class="ig">
+        <a href="https://www.instagram.com/warmenergyyoga/?hl=en"><img class="icons" src="images/igicon.png" alt=""></a>
+      </div>
+      <div class="git">
+        <a href="https://github.com/danecalifornia"><img class="icons" src="images/githubicon.png" alt=""></a>
+      </div>
+      <div class="youtube">
+        <a href="https://www.youtube.com/channel/UCcWbXLq3EXQ9gQDT3fJRpxw/about"><img class="icons" src="images/youtubeicon.png" alt=""></a>
+      </div>
+    </div>
     <small>
       <p>Copyright &copy Dane Williamson 2022</p>
     </small>
   </footer>
   <dialog id="dialog">
-    <h2><center>Sign-Up Here</center></h2>
+    <h2>
+      <center>Sign-Up</center>
+    </h2>
     <p class="p-width">Lorem ipsum dolor sit amet,
       consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
       et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
       exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <center>
-        <form class="" action="index.html" method="post">
+    </p>
+    <center>
+      <form class="" action="index.html" method="post">
         <label for="">Full Name:</label><br><br>
         <input type="text" name="" value=""> <br><br>
         <label for="">Classes of Intrest:</label> <br> <br>
         <input type="text" name="" value=""> <br><br>
         <label for="">Email Address:</label> <br><br>
-        <input type="text" name="" value=""><br><br>
+        <input type="email" id="email" name="email"><br><br>
       </form>
-      <button onclick="submitButton();">sumbit</button>
+      <button class="button-spacer" onclick="submitButton();">sumbit</button>
     </center>
   </dialog>
-
-
 </body>
 
 </html>
