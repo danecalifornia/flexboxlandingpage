@@ -44,7 +44,7 @@
         dynamic, and inclusive yoga classes where everyone can
         thrive. </p>
       <p class="p2">Settle in, you belong here.</p>
-      <button type="button" name="button">sign up</button>
+      <button type="button" name="button" onclick="window.dialog.show();" >sign up</button>
     </div>
     <div class="right-container">
       <img class="intropic" src="images/IMG_5058.jpeg" alt="">
@@ -84,7 +84,7 @@
       <!-- class #2 div -->
       <div class="class-one">
         <img class="thumbnails" src="images/seatedyoga.jpg" alt="">
-        <h3 class="class-name">Vinyasa Flow</h3>
+        <h3 class="class-name">Yin Yoga</h3>
         <p>
           This class is a fast paced energy building experience
           that aims to build heat.
@@ -93,7 +93,7 @@
       <!-- class #3 div -->
       <div class="class-one">
         <img class="thumbnails" src="images/pexels-cottonbro.jpg" alt="">
-        <h3 class="class-name">Vinyasa Flow</h3>
+        <h3 class="class-name">Ashtanga Flow</h3>
         <p>
           This class is a fast paced energy building experience
           that aims to build heat.
@@ -102,7 +102,7 @@
       <!-- class #4 div -->
       <div class="class-one">
         <img class="thumbnails" src="images/pexels-andrea-piacquadio.jpg" alt="">
-        <h3 class="class-name">Vinyasa Flow</h3>
+        <h3 class="class-name">Restorative Yoga</h3>
         <p>
           This class is a fast paced energy building experience
           that aims to build heat.
@@ -118,7 +118,7 @@
         <p class="last-call">Sign up for a group or private session by clicking the button. </p>
       </div>
       <div class="button-2">
-        <button type="button" name="button">sign up</button>
+        <button type="button" name="button" onclick="window.dialog.show();">sign up</button>
       </div>
     </div>
   </section>
@@ -128,6 +128,28 @@
       <p>Copyright &copy Dane Williamson 2022</p>
     </small>
   </footer>
+  <dialog id="dialog">
+    <h2><center>Sign-Up Here</center></h2>
+    <p class="p-width">Lorem ipsum dolor sit amet,
+      consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+      et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <center>
+        <form class="" action="index.html" method="post">
+        <label for="">Full Name:</label><br><br>
+        <input type="text" name="" value=""> <br><br>
+        <label for="">Classes of Intrest:</label> <br> <br>
+        <input type="text" name="" value=""> <br><br>
+        <label for="">Email Address:</label> <br><br>
+        <input type="text" name="" value=""><br><br>
+      </form>
+      <button onclick="submitButton();">sumbit</button>
+    </center>
+  </dialog>
+
+
 </body>
 
 </html>
